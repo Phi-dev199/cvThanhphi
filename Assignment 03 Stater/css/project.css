@@ -1,0 +1,165 @@
+/* PHÔNG CHỮ VÀ BỘ CHỌN PHỔ QUÁT */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+/* KHỐI BAO QUANH */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  border: 8px solid blue;
+}
+/* ĐƯỜNG VIỀN BÊN NGOÀI */
+.border {
+  border: 8px solid blue;
+}
+/* TIÊU ĐỀ H2 */
+.section-title {
+  color: blue;
+  font-size: 30px;
+  margin: 20px;
+}
+/* TIÊU ĐỀ H3 */
+h3 {
+  padding-bottom: 10px;
+}
+/* CHIA Ô CHO KHỐI GOALS, TEAM VÀ PRIMARY  */
+.goal {
+  display: grid;
+  grid-template-columns: 10% auto;
+  gap: 20px;
+  padding-top: 10px;
+  margin: 0 20px;
+}
+/* ĐƯỜNG VIỀN PHÍA DƯỚI NỘI DUNG GOALS */
+.border-bottom {
+  border-bottom: 1px solid gray;
+}
+/* ĐƯỜNG KẺ DƯỚI TIÊU ĐỀ H2 */
+.border-top {
+  border-top: 1px solid gray;
+}
+.padding-top {
+  padding: 10px;
+}
+/* ICON */
+.fa-solid {
+  text-align: center;
+  font-size: 32px;
+}
+/* SCOPES */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 20px;
+}
+/* KHOẢNG TRẮNG GIỮA CÁC H3 VÀ P TRONG SCOPES */
+.in {
+  padding-top: 20px;
+}
+.in p {
+  padding-bottom: 20px;
+}
+/* VIẾT IN HOA */
+.uppercase {
+  text-transform: uppercase;
+}
+/* TIMELINE */
+.flex-7 {
+  display: grid;
+  grid-template-columns: 15% auto;
+  gap: 20px;
+  align-items: center;
+  margin: 0 20px;
+}
+/* TẠO KIỂU SỐ */
+span {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid gray;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 24px;
+  background-color: rgb(109, 82, 109);
+  color: white;
+}
+/* ĐƯỜNG KẺ NÉT ĐỨT */
+.dashed {
+  border-bottom: 1px dashed green;
+  margin-bottom: 10px;
+}
+.dashed h3 {
+  padding-top: 15px;
+}
+/* LAPTOP */
+/* order các item */
+@media only screen and (min-width: 992px) {
+  .item-1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .item-2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .item-3 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .item-4 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .item-5 {
+    grid-area: 1 / 3 / 3 / -1;
+  }
+}
+/* TABLET */
+@media only screen and (min-width: 601px) and (max-width: 991px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .goal,
+  .grid-2,
+  .flex-7 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  span {
+    margin-top: 10px;
+  }
+  .dashed p {
+    margin-bottom: 10px;
+  }
+  .border-bottom {
+    margin-bottom: 10px;
+  }
+}
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .goal,
+  .grid-2,
+  .flex-7 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  span {
+    margin-top: 10px;
+  }
+  .dashed p {
+    margin-bottom: 10px;
+  }
+  .border-bottom {
+    margin-bottom: 10px;
+  }
+}

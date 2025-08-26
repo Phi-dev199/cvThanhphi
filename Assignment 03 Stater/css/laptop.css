@@ -1,0 +1,21 @@
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 32px;
+  }
+  /* XÓA ĐÁNH DẤU HÀM ul */
+  ul {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .btn-title i {
+    padding: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
+  /* FOOTER */
+  .btn-link {
+    padding: 0;
+    text-decoration: none;
+  }
+}
